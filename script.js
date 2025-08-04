@@ -113,7 +113,7 @@ const Move = async () => {
 
     }
     else {
-
+        console.log("P2: " + dice.innerText);
         if (p2.textContent == '0') {
             if (dice.textContent == '1') {
                 p2.textContent = '1';
@@ -139,11 +139,11 @@ const Move = async () => {
         turn = true;
     }
     dice.disabled = false;
-    dice.style.backgroundColor = dice.style.backgroundColor == 'red' ? 'blue' : 'red';
+    dice.style.backgroundColor = dice.style.backgroundColor == 'rgb(230, 57, 70)' ? '#1f6cd8' : '#e63946';
 
 }
 
-dice.style.backgroundColor = 'red';
+dice.style.backgroundColor = '#e63946';
 // players[0].style.backgroundColor = 'red';
 async function Click() {
     dice.addEventListener("click", () => {
